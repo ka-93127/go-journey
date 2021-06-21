@@ -1,0 +1,84 @@
+html, body {
+    font-family: arial;
+    height: 100%;
+    margin: 0 0;
+}
+
+div.block1 {
+    height: 100%;
+    background-image: url('../img/11.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    color:black;
+}
+
+div.block2 {
+    height: 100%;
+    background-color: rgb(240, 9, 9);
+    color:rgb(24, 1, 1);
+}
+
+div.block3 {
+    height: 100%;
+    background-color: rgb(114, 21, 201);
+    color:rgb(24, 5, 5);
+}
+
+footer {
+    height: 10%;
+    background-color: rgb(160, 160, 160);
+    color:black;
+}
+
+
+/* ------------------------上方bar------------------------------ */
+
+/* class 為 topnav 的 ul */
+ul.topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(22, 16, 6);
+}
+
+/* class 為 topnav 的 ul 中的 li */
+ul.topnav li {
+    float: left;
+}
+
+/* class 為 topnav 的 ul 中的 li 中的 a*/
+ul.topnav li a {
+    display: block;
+    color: rgb(4, 10, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* class 為 topnav 的 ul 中的 li 中的 a 狀態為 hover */
+ul.topnav li a:hover {
+    background-color: rgb(255, 104, 3);
+}
+
+/* class 為 topnav 的 ul 中, class 為 active 的 li */
+ul.topnav li.active {
+    background-color: #4CAF50;
+}
+
+/* class 為 topnav 的 ul 中, class 為 right 的 li */
+ul.topnav li.right {
+    float: right;
+}
+
+/* 當裝置寬度不超過600px時，用下方CSS方式顯示 */
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+
